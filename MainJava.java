@@ -74,6 +74,8 @@ public class MainJava {
         david.introduceSelf();
         Unknown.introduceSelf();
 
+        System.out.println(Person.count);
+
 
 
     }
