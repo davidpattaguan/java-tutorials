@@ -1,9 +1,13 @@
+import java.util.Scanner;
+
 public class MainJava {
     public static void main (String[] args){
         WhileLoops a = new WhileLoops();
         Variables b = new Variables();
         ForLoops c = new ForLoops();
         IfStatements d = new IfStatements();
+        IfStatements e = new IfStatements();
+        Scanner input = new Scanner(System.in);
 
         Boolean variable1 = b.IAmBoolean();
         Number variable2 = b.IAmNumber();
@@ -27,9 +31,15 @@ public class MainJava {
         d.IfStatementSample1();
 
         System.out.println("Determine if a number is odd or even");
-        
-        System.out.print(d.IfStatementSample2(5));
+        System.out.print("Enter a number: ");
+        int value= input.nextInt();
+        System.out.println(d.IfStatementSample2(value));
 
+
+        System.out.println("[DO-WHILE] Pick a number from 1-20 then print hotdogs accordingly with the number selected");
+        System.out.print("Enter a number from 1-20: ");
+        int number= input.nextInt();
+        System.out.println(e.IfStatementSample3(number));
 
     }
 }
