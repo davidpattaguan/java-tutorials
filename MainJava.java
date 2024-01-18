@@ -65,12 +65,14 @@ public class MainJava {
 
 
         System.out.println("PERSON CLASS");
-        Person david = new Person();
+        Person david = new Person(5,"david","Male");
+        Person Unknown = new Person();
 
         david.setAge(23);
         david.setName("David");
 
         david.introduceSelf();
+        Unknown.introduceSelf();
 
 
 
