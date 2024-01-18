@@ -7,6 +7,14 @@ public class Person {
     private String name;
     private String gender;
 
+
+    public Person(int id, int age, String name, String gender) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.gender = gender;
+    }
+
     public Person() {
         this.age = 18;
         this.name = "John Doe";
@@ -14,6 +22,7 @@ public class Person {
         id = count;
         count++;
     }
+
     public Person(int age, String name, String gender) {
         this.age = age;
         this.name = name;
@@ -45,6 +54,7 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public void introduceSelf(){
         System.out.println("Hi! I'm " + name + ". I'm " + age + " years old. " + gender + " ID: " + id );
