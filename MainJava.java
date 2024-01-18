@@ -8,6 +8,9 @@ public class MainJava {
         IfStatements d = new IfStatements();
         IfStatements e = new IfStatements();
         SwitchStatements f = new  SwitchStatements();
+        ArraySamples g = new  ArraySamples();
+
+
         Scanner input = new Scanner(System.in);
 
         Boolean variable1 = b.IAmBoolean();
@@ -55,6 +58,8 @@ public class MainJava {
         System.out.println("Calculated Number is: " + f.SwitchStatement1(operatorValue,firstNumber,secondNumber));
 
 
+        g.ArrayofNumbers();
+        g.ArrayofStrings();
 
 
 

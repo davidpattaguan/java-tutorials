@@ -31,6 +31,7 @@ public class IfStatements {
         } else if (number >=1 && number < 21){
 
             int initialValue = 0;
+
             do {
             System.out.println("Hotdogs");
             initialValue++;
