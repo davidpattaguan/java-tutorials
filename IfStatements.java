@@ -24,10 +24,10 @@ public class IfStatements {
 
     }
 
-    public static String IfStatementSample3 (int number) {
+    public static void IfStatementSample3 (int number) {
 
         if(number < 1){
-            return "Number is Less than 0! Please Try Again.";
+           System.out.print("Number is Lesser than 1");
         } else if (number >=1 && number < 21){
 
             int initialValue = 0;
@@ -37,10 +37,11 @@ public class IfStatements {
 
             } while(initialValue != number);
         } else {
-            return "Number is Greater than 20!";
+            System.out.print("Number is Greater than 20!");
+
         }
 
-        return null;
+
 
     }
 

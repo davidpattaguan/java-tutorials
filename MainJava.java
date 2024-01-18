@@ -7,6 +7,7 @@ public class MainJava {
         ForLoops c = new ForLoops();
         IfStatements d = new IfStatements();
         IfStatements e = new IfStatements();
+        SwitchStatements f = new  SwitchStatements();
         Scanner input = new Scanner(System.in);
 
         Boolean variable1 = b.IAmBoolean();
@@ -39,7 +40,23 @@ public class MainJava {
         System.out.println("[DO-WHILE] Pick a number from 1-20 then print hotdogs accordingly with the number selected");
         System.out.print("Enter a number from 1-20: ");
         int number= input.nextInt();
-        System.out.println(e.IfStatementSample3(number));
+        e.IfStatementSample3(number);
+
+
+        System.out.println("Calculator 101: Apply mathematical operations with 2 numbers");
+        int firstNumber = 0;
+        int secondNumber = 0;
+        System.out.println("Select an Operator: [1] Add, [2] Subtract, [3] Multiply, [4] Divide");
+        int operatorValue= input.nextInt();
+        System.out.println("Enter First Number: ");
+        firstNumber= input.nextInt();
+        System.out.println("Enter Second Number: ");
+        secondNumber= input.nextInt();
+        System.out.println("Calculated Number is: " + f.SwitchStatement1(operatorValue,firstNumber,secondNumber));
+
+
+
+
 
     }
 }
