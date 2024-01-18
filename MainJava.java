@@ -61,6 +61,8 @@ public class MainJava {
         g.ArrayofNumbers();
         g.ArrayofStrings();
 
+        g.MultiDimensionalArrays();
+
 
 
     }

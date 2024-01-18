@@ -39,9 +39,40 @@ public class ArraySamples {
 
     public static void MultiDimensionalArrays() {
 
+        int [][] grid = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+
+        char[][] chessBoard = {
+                {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
+                {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+                {'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'}
+        };
 
 
+        System.out.println("3x3 Grid");
 
+        for(int row=0; grid.length > row  ; row++){
+            for(int col=0; col < grid[row].length ; col++){
+                System.out.print(grid[row][col] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Chessboard");
+        for(int row=0; chessBoard.length > row  ; row++){
+            for(int col=0; col < chessBoard[row].length ; col++){
+                System.out.print(chessBoard[row][col] + " ");
+            }
+            System.out.println();
+        }
     }
 
 
