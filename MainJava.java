@@ -64,6 +64,15 @@ public class MainJava {
         g.MultiDimensionalArrays();
 
 
+        System.out.println("PERSON CLASS");
+        Person david = new Person();
+
+        david.setAge(23);
+        david.setName("David");
+
+        david.introduceSelf();
+
+
 
     }
 }
