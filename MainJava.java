@@ -1,3 +1,5 @@
+import ocean.Fish;
+
 import java.util.Scanner;
 
 public class MainJava {
@@ -95,5 +97,10 @@ public class MainJava {
         Cat lecarose = new Cat("Lecarose", 5, "Ascat");
         lecarose.wagTail();
         System.out.print(lecarose.getBreed());
+
+        // Fish Package
+        System.out.println("Package Sample");
+        Fish goldy = new Fish();
+        goldy.swim();
     }
 }
