@@ -88,6 +88,12 @@ public class MainJava {
         System.out.println("ACME CORPORATION ZOO FORM");
         Dog mochi = new Dog("Mocha", 5, "Shitsu");
         mochi.wagTail();
-        mochi.getBreed();
+        System.out.print(mochi.getBreed());
+
+        // Cat Class Inheritance
+        System.out.println("ACME CORPORATION ZOO FORM");
+        Cat lecarose = new Cat("Lecarose", 5, "Ascat");
+        lecarose.wagTail();
+        System.out.print(lecarose.getBreed());
     }
 }
