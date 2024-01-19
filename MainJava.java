@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class MainJava {
     public static void main (String[] args){
+
+        Boolean variable1 = b.IAmBoolean();
+        Number variable2 = b.IAmNumber();
+        String variable3= b.IAmString();
         WhileLoops a = new WhileLoops();
         Variables b = new Variables();
         ForLoops c = new ForLoops();
@@ -9,13 +13,12 @@ public class MainJava {
         IfStatements e = new IfStatements();
         SwitchStatements f = new  SwitchStatements();
         ArraySamples g = new  ArraySamples();
+        StringBuilderSample h = new StringBuilderSample();
 
 
         Scanner input = new Scanner(System.in);
 
-        Boolean variable1 = b.IAmBoolean();
-        Number variable2 = b.IAmNumber();
-        String variable3= b.IAmString();
+
 
         System.out.println("Boolean Type:");
         System.out.println(variable1);
@@ -75,6 +78,20 @@ public class MainJava {
         Unknown.introduceSelf();
 
         System.out.println(Person.count);
+
+
+        System.out.println(h);
+
+
+        System.out.println("ACME CORPORATION ZOO FORM");
+
+        Dog mochi = new Dog("Mocha",5,"Shitsu");
+        mochi.wagTail();
+        mochi.getBreed();
+
+
+
+
 
 
 

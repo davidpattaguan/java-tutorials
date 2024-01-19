@@ -3,17 +3,11 @@ public class Person {
     public final static int LUCKY_NUMBER = 7;
     public static int count = 0;
     public int id;
-    private int age;
-    private String name;
-    private String gender;
+    protected int age;
+    protected String name;
+    protected String gender;
 
 
-    public Person(int id, int age, String name, String gender) {
-        this.id = id;
-        this.age = age;
-        this.name = name;
-        this.gender = gender;
-    }
 
     public Person() {
         this.age = 18;
@@ -44,10 +38,12 @@ public class Person {
     }
 
     public void setAge(int age) {
+
         this.age = age;
     }
 
     public String getName() {
+
         return name;
     }
 
