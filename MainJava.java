@@ -102,5 +102,8 @@ public class MainJava {
         System.out.println("Package Sample");
         Fish goldy = new Fish();
         goldy.swim();
+
+        System.out.print("Interfaces");
+        System.out.print("Public Private Protected");
     }
 }
