@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements Info {
 
     public final static int LUCKY_NUMBER = 7;
     public static int count = 0;
@@ -56,4 +56,8 @@ public class Person {
         System.out.println("Hi! I'm " + name + ". I'm " + age + " years old. " + gender + " ID: " + id );
     }
 
+    @Override
+    public void showInfo() {
+       System.out.print("Hello World" + name);
+    }
 }

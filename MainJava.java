@@ -5,15 +5,39 @@ import java.util.Scanner;
 public class MainJava {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        // Variable Declarations
+        // 1 - A Helloworld Program
+
+        HelloWorldProgram hello = new HelloWorldProgram();
+        hello.helloworld();
+
+        // 2 - Using Variables
+
+        Variables myVariable = new Variables();
+
         Boolean variable1;
         Number variable2;
         String variable3;
 
+
+        variable1 =  myVariable .IAmBoolean();
+        variable2 =  myVariable .IAmNumber();
+        variable3 =  myVariable .IAmString();
+
+        System.out.println("Boolean Type:\n" + variable1);
+        System.out.println("Number Type:\n" + variable2);
+        System.out.println("String Type:\n" + variable3);
+
+
+
+
+        //Scanner
+        Scanner input = new Scanner(System.in);
+
+
+
         // Object Instantiation
-        Variables b = new Variables();
+
         WhileLoops a = new WhileLoops();
         ForLoops c = new ForLoops();
         IfStatements d = new IfStatements();
@@ -22,15 +46,7 @@ public class MainJava {
         ArraySamples g = new ArraySamples();
         StringBuilderSample h = new StringBuilderSample();
 
-        // Operations
-        variable1 = b.IAmBoolean();
-        variable2 = b.IAmNumber();
-        variable3 = b.IAmString();
 
-        // Output Variable Types
-        System.out.println("Boolean Type:\n" + variable1);
-        System.out.println("Number Type:\n" + variable2);
-        System.out.println("String Type:\n" + variable3);
 
         // While Loop Sample
         System.out.println("While Loop Sample");
@@ -104,6 +120,11 @@ public class MainJava {
         goldy.swim();
 
         System.out.print("Interfaces");
+
+
         System.out.print("Public Private Protected");
+
+
+
     }
 }
